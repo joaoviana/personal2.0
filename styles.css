@@ -8,7 +8,23 @@ body {
 }
 
 header {
-    margin: 5rem 10rem 12rem 10rem;
+    margin: 7rem 1rem;
+    height: 100vh;
+}
+
+.header__title {
+
+}
+
+.header__box {
+    border: 3px solid #333;
+    padding: 30px;
+    background: #9dffdd;
+    box-shadow: 6px 6px 0px #9dffdd;
+}
+
+.header__description {
+    font-weight: 400;
 }
 
 .type--centered {
@@ -36,13 +52,35 @@ header {
     align-self: center;
 }
 
-.section {
-    /* width: 0vw; */
-    height: 100vh;
-    padding: 3rem;
+.sections {
+    display: none;
 }
 
+.section {
+    height: 100vh;
+    position: relative;
+}
 
+.section__content {
+    border: 3px solid #444;
+    box-shadow: 6px 6px 0px #333;
+    padding: 20px;
+    margin: 70px 20px;
+}
+
+.section__image {   
+    position: absolute;
+    width: 254px;
+    top: -38px;
+    left: -41px;
+}
+
+.section__image--right {
+    position: absolute;
+    width: 254px;
+    top: -38px;
+    right: -41px;
+}
 
 .section__title {
     margin-right: 30px;
@@ -61,6 +99,16 @@ header {
     width: 30rem;
     border-right: 1px solid #333;
     margin-right: 20px;
+}
+
+.input {
+    border: none;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    font-size: 2rem;
+    border-bottom: 3px solid #444;
+    font-family: 'Roboto Mono';
 }
 
 /*  from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows */
