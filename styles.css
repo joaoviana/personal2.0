@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Roboto Mono', monospace;
+    padding: 5rem;
+}
+
+header {
+    margin: 5rem 10rem 12rem 10rem;
+}
+
+.type--centered {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--end {
+    justify-content: flex-end;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex--in-between {
+    justify-content: space-between;
+}
+
+.flex--align-center {
+    align-self: center;
+}
+
+.section {
+    /* width: 0vw; */
+    height: 100vh;
+    padding: 3rem;
+}
+
+
+
+.section__title {
+    margin-right: 30px;
+}
+
+.section--disabled {
+    display: none;
+}
+
+.section--overflow {
+    overflow-y: scroll;
+    height: 25rem;
+}
+
+.sidenav {
+    width: 30rem;
+    border-right: 1px solid #333;
+    margin-right: 20px;
+}
+
+/*  from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows */
+
+.arrow {
+    cursor: pointer;
+    border: solid #333;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.arrow:hover {
+    border: solid rgb(52, 100, 140);
+    border-width: 0 4px 4px 0;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
