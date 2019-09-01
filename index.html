@@ -3,9 +3,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,500,700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>hello.</title>
 </head>
 <body>
+    <header>
+        <h1 class="type--centered">João Viana</h1>
+    </header>
+
+    <div class="flex">
+        <!-- <nav class="sidenav">
+            <div>
+                <h2>What</h2>
+            </div>
+        </nav> -->
+        
+        <div class="flex--column">
+            <section id="section1" class="section">
+                <h2 class="section__title">I Do</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                
+                <div class="flex flex--end">
+                    <a href="#section2" onclick="goToSection(2, 1)" class="arrow down"></a>
+                </div>
+            </section>
     
+            <section id="section2" class="section section--disabled">
+                <div class="flex flex--in-between">
+                    <h2 class="section__title">I Did</h2>
+                    <div class="flex--align-center">
+                        <a href="#section1" onclick="goToSection(1, 2)" class="arrow up"></a>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <div class="flex flex--end">
+                    <a href="#section3" onclick="goToSection(3, 2)" class="arrow down"></a>
+                </div>
+            </section>
+    
+            <section id="section3" class="section section--disabled">
+                <div class="flex flex--in-between">
+                    <h2 class="section__title">I'm doing when I'm supposed to be doing stuff I should be doing</h2>
+                    <div class="flex--align-center">
+                        <a href="#section2" onclick="goToSection(2, 3)" class="arrow up"></a>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
+
+
+
