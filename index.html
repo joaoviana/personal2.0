@@ -9,60 +9,58 @@
     <title>hello.</title>
 </head>
 <body>
-    <header>
-        <h1 class="type--centered">João Viana</h1>
+    <header id="header" class="type--centered">
+        <h1 class="header__title">João Viana</h1>
+        <h2 class="header__description">Creative Coder | Graduate Software Engineer | Depop Seller Flop</h2>
+        <form class="header__box">
+            <h3 class="header__question">Want to know more about me?</h3>
+            <input id="answer" class="input" type="text" placeholder="Let's hope my regex works!" oninput="checkInput()">
+        </form>
     </header>
 
-    <div class="flex">
-        <!-- <nav class="sidenav">
-            <div>
-                <h2>What</h2>
-            </div>
-        </nav> -->
-        
+    <div class="flex sections">
         <div class="flex--column">
             <section id="section1" class="section">
-                <h2 class="section__title">I Do</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                <img class="section__image" src="assets/section-images/ido.png" alt="">
+                <div class="section__content">
+                    <h2 class="section__title">I Do</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                </div>
                 
                 <div class="flex flex--end">
-                    <a href="#section2" onclick="goToSection(2, 1)" class="arrow down"></a>
+                    <a href="#section2" class="arrow down"></a>
                 </div>
             </section>
-    
-            <section id="section2" class="section section--disabled">
-                <div class="flex flex--in-between">
+            <section id="section2" class="section">
+                <img class="section__image--right" src="assets/section-images/idid.png" alt="">
+                <div class="section__content">
                     <h2 class="section__title">I Did</h2>
-                    <div class="flex--align-center">
-                        <a href="#section1" onclick="goToSection(1, 2)" class="arrow up"></a>
-                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
                 <div class="flex flex--end">
-                    <a href="#section3" onclick="goToSection(3, 2)" class="arrow down"></a>
+                    <a href="#section3" class="arrow down"></a>
                 </div>
             </section>
     
-            <section id="section3" class="section section--disabled">
-                <div class="flex flex--in-between">
+            <section id="section3" class="section">
+               
+                <img class="section__image" src="assets/section-images/imdoing.png" alt="">
+                <div class="section__content">
                     <h2 class="section__title">I'm doing when I'm supposed to be doing stuff I should be doing</h2>
-                    <div class="flex--align-center">
-                        <a href="#section2" onclick="goToSection(2, 3)" class="arrow up"></a>
-                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas consectetur ut, facere nisi dolore odit nobis perferendis temporibus voluptatem exercitationem suscipit similique quaerat animi hic, repellendus ullam nesciunt illo facilis.</p>
             </section>
         </div>
     </div>
 
-    <footer>
-
+    <footer class="type--centered">
+        <a href="" onclick="scrollToTop()">Back To Top</a>
     </footer>
 </body>
 </html>
