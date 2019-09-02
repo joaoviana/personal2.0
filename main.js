@@ -6,6 +6,9 @@ const catVids = [
   { name: "world's smallest cats... v interesting", link: 'https://www.youtube.com/watch?v=eNeRyBUCGV4' }
 ]
 
+/**
+ * scrolls to top of the page
+ */
 const scrollToTop = (() => {
     const c = document.documentElement.scrollTop || document.body.scrollTop;
     if (c > 0) {
@@ -14,6 +17,12 @@ const scrollToTop = (() => {
     }
 });
 
+/**
+ * Event Listener - button 'Next' checks user input
+ * if 'yes' or similar, show more about me
+ * if 'no' or similar, show cat video
+ * if nothing similar to the two above, show error message.
+ */
 document.getElementById("answerbutton").addEventListener("click", ((event) => {
   event.preventDefault();
   let answer = document.getElementById('answer').value;
@@ -39,6 +48,9 @@ document.getElementById("answerbutton").addEventListener("click", ((event) => {
   }
 }));
 
+/**
+ * Generate video link - injects href and its innerHTML with one of the objs from catVids array
+ */
 const generateVideoLink = (() => {
   let videoLink = document.getElementById('video-link');
   let section = document.getElementById('section-no');
@@ -61,4 +73,10 @@ const generateVideoLink = (() => {
   section.scrollIntoView();
 });
 
+
+/**
+ * gets random number between a max and a min - range
+ * @param {Number} max 
+ * @param {Number} min 
+ */
 const getRandomNumberBetween  = ((max, min) => Math.random() * (max - min) + min);
