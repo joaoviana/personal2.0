@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+nav {
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.nav__item {
+    text-decoration: none;
+    background: #2ab387;
+    padding: 0.5rem 1rem;
+    width: 58px;
+    color: white;
+    box-shadow: 2px 4px 0px #238e6b;
+    transition: background 1s;
+}
+
+.nav__item:hover {
+    background: #32dea7;
+}
+
+
+footer {
+    margin: 7rem 2rem 2rem 2rem;
+}
+
+.footer__image {
+    width: 50px;
+}
+
+.footer__wrapper {
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.footer__wrapper:hover {
+    background: #f8f8f8;
+}
+
+#video-link {
+    padding: 0.6rem;
+    border: 3px solid #333;
+    background: #9dffdd;
+    box-shadow: 6px 6px 0px #9dffdd;
+    text-decoration: none;
+    cursor: pointer;
+    color: #bf5dff;
+}
+
+#no-message {
+    font-size: 1.3rem;
+    color: yellow;
+    background: black;
+    border: 3px dotted;
+}
+
+.disabled {
+    display: none;
+}
+
+.button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    margin: 2rem;
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #bf5dff;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.button:hover {
+    background: #436fb1;
+}
+
+.header__title {
+    margin-bottom: 2rem;
+}
+
+.header__image {
+    width: 200px;
+}
+
+.header__box {
+    border: 3px solid #333;
+    padding: 30px;
+    background: #9dffdd;
+    box-shadow: 6px 6px 0px #9dffdd;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    width: 30rem;
+    margin: auto;
+}
+
+.header__description {
+    font-weight: 400;
+    margin: 1rem 2rem 4rem 2rem;
+}
+
+.header__description--handwriting {
+    font-family: 'Great Vibes', cursive;
+}
+
+.type--centered {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--end {
+    justify-content: flex-end;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex--center {
+    justify-content: center;
+}
+
+.flex--in-between {
+    justify-content: space-between;
+}
+
+.flex--align-center {
+    align-self: center;
+}
+
+#section1 {
+    background: aqua;
+    margin-top: 5rem;
+}
+#section2 {
+    background: lightpink;
+}
+#section3 {
+    background: greenyellow;
+}
+
+#section-no {
+    background: aquamarine;
+    padding: 2rem;
+}
+
+.section {
+    position: relative;
+    padding-top: 5rem;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    height: 100vh;
+}
+
+.section__content {
+    border: 3px solid #444;
+    box-shadow: 6px 6px 0px #333;
+    padding: 20px;
+    margin: 30px 20px;
+}
+
+.section__image {   
+    position: absolute;
+    width: 254px;
+    top: 5px;
+    left: -20px;
+}
+
+.section__image--right {
+    position: absolute;
+    width: 254px;
+    top: 5px;
+    right: -20px;
+}
+
+.section__title {
+    margin-right: 30px;
+}
+
+.section--disabled {
+    display: none;
+}
+
+.section--overflow {
+    overflow-y: scroll;
+    height: 25rem;
+}
+
+.sidenav {
+    width: 30rem;
+    border-right: 1px solid #333;
+    margin-right: 20px;
+}
+
+.input {
+    border: none;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    font-size: 2rem;
+    border-bottom: 3px solid #444;
+    font-family: 'Roboto Mono';
+}
+
+/*  from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows */
+
+.arrow {
+    cursor: pointer;
+    border: solid #333;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 1rem;
+}
+
+.arrow:hover {
+    border: solid rgb(52, 100, 140);
+    border-width: 0 4px 4px 0;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media screen and (max-width: 600px) {
+    .header__description {
+        margin: 0rem 1rem 4rem 1rem;
+    }
+    .header__box {
+        width: 17rem;
+    }
+    .input {
+        font-size: 1rem;
+    }
+    .button {
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .section__content p {
+        font-size: 0.8rem;
+    }
+    nav {
+        font-size: 0.7rem;
+    }
+    .section__image {   
+        top: 5px;
+    }
+    
+    .section__image--right {
+        top: 5px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+    #video-link {
+        font-size: 0.5rem;
+        background: yellow;
+    }
+  }
