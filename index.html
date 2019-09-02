@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,500,700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <title>hello.</title>
 </head>
 <body>
     <header id="header" class="type--centered">
+        <img src="assets/section-images/main.png" class="header__image" alt="">
         <h1 class="header__title">João Viana</h1>
-        <h4 class="header__description">Creative Coder | Graduate Software Engineer | Depop Seller Flop</h4>
+        <h4 class="header__description">Creative Coder | Graduate Software Engineer | <span class="header__description--handwriting">⛓Depop Seller Flop⛓</span></h4>
         <form class="header__box">
             <h3 class="header__question">Want to know more about me?🍯</h3>
             <input id="answer" class="input" type="text" placeholder="Let's hope my regex works!" >
             <button id="answerbutton" class="button" type="submit" >Next</button>
         </form>
-        <h3 class="disabled" id="no-message">Thanks for not caring about my personal life!</h3>
+        <h2 class="disabled" id="no-message">Thanks for not caring about my personal life! 🙃</h2>
         <h3 id="message" class="disabled">Please try again 🤙🏼</h3>
     </header>
+
+    <nav id="nav" class="disabled type--centered">
+        <a class="nav__item" href="#section1">👨‍💻about</a>
+        <a class="nav__item" href="#section2">📓past</a>
+        <a class="nav__item" href="#section3">🛀spare time</a>
+    </nav>
 
     <section id="section-no" class="disabled type--centered">
         <h1>You know those cat videos people love?</h1>
@@ -67,8 +74,11 @@
         </div>
     </div>
 
-    <footer class="type--centered">
-        <a href="" onclick="scrollToTop()">Back To Top</a>
+    <footer class="type--centered flex">
+        <div onclick="scrollToTop()" class="flex footer__wrapper">
+            <img class="footer__image" src="https://img.icons8.com/carbon-copy/100/000000/restart.png">
+            <a href="">Restart</a>
+        </div>
     </footer>
 </body>
 <script src="main.js"></script>
