@@ -55,14 +55,22 @@ footer {
     background: #f8f8f8;
 }
 
-#video-link {
+.video-link__wrapper {
     padding: 0.6rem;
     border: 3px solid #333;
-    background: #9dffdd;
+    background: yellow;
     box-shadow: 6px 6px 0px #9dffdd;
+}
+
+#video-link {
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer;    
     color: #bf5dff;
+}
+#video-link:hover {
+    text-decoration: none;
+    cursor: pointer;    
+    color: #237146;
 }
 
 #no-message {
@@ -305,7 +313,7 @@ footer {
         font-size: 1.3rem;
     }
     #video-link {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         background: yellow;
     }
   }
