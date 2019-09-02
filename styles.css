@@ -100,6 +100,21 @@ footer {
     margin-bottom: 2rem;
 }
 
+.header__social {
+    width: 40px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 1.3s;
+}
+
+.header__social:hover {
+    opacity: 0.8;
+}
+
+.header__social:first-child {
+    margin-right: 20px;
+}
+
 .header__image {
     width: 200px;
 }
@@ -116,7 +131,7 @@ footer {
 
 .header__description {
     font-weight: 400;
-    margin: 1rem 2rem 4rem 2rem;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 .header__description--handwriting {
@@ -129,6 +144,10 @@ footer {
 
 .flex {
     display: flex;
+}
+
+.flex--centered {
+    justify-content: center;
 }
 
 .flex--end {
@@ -255,7 +274,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     .header__description {
-        margin: 0rem 1rem 4rem 1rem;
+        margin: 0rem 1rem 1rem 1rem;
     }
     .header__box {
         width: 17rem;
