@@ -298,6 +298,7 @@ footer {
     
     .section__image--right {
         top: 5px;
+        right: 0;
     }
 
     h2 {
