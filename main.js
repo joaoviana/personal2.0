@@ -26,7 +26,7 @@ const scrollToTop = (() => {
 document.getElementById("answerbutton").addEventListener("click", ((event) => {
   event.preventDefault();
   let answer = document.getElementById('answer').value;
-  let yesRegex = /y.?|sure.?/gi;
+  let yesRegex = /y.?|sure.?|ok.?/gi;
   let noRegex = /n.?|hell no.?/gi;
   if (answer.length > 0) {
     let form = document.getElementsByClassName('header__box')[0];
